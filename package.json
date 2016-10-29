@@ -31,6 +31,7 @@
   "devDependencies": {
     "concurrently": "^3.1.0",
     "css-loader": "^0.25.0",
+    "file-loader": "^0.9.0",
     "live-server": "^1.1.0",
     "node-sass": "^3.10.1",
     "sass-loader": "^4.0.2",
@@ -38,9 +39,11 @@
     "ts-loader": "^0.9.5",
     "typescript": "^2.0.6",
     "typings": "^1.5.0",
+    "url-loader": "^0.5.7",
     "webpack": "^1.13.3"
   },
   "dependencies": {
-    "jquery": "^3.1.1"
+    "jquery": "^3.1.1",
+    "materialize-css": "^0.97.7"
   }
 }
