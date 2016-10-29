@@ -6,6 +6,9 @@
     "type": "git",
     "url": "git+https://github.com/Wiichaeller/wiichaeller-overview.git"
   },
+  "scripts": {
+    "start": "concurrently --kill-others \"webpack --progress --colors --watch\" \"live-server src/\""
+  },
   "keywords": [
     "wiichaeller",
     "banqer",
@@ -26,6 +29,7 @@
   },
   "homepage": "https://github.com/Wiichaeller/wiichaeller-overview#readme",
   "devDependencies": {
+    "concurrently": "^3.1.0",
     "css-loader": "^0.25.0",
     "live-server": "^1.1.0",
     "node-sass": "^3.10.1",
