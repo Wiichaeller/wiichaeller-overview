@@ -1,0 +1,42 @@
+{
+  "name": "wiichaeller-overview",
+  "version": "1.0.0",
+  "description": "The main site for wiichaeller.site",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wiichaeller/wiichaeller-overview.git"
+  },
+  "keywords": [
+    "wiichaeller",
+    "banqer",
+    "site",
+    "420",
+    "turnup",
+    "blaze",
+    "it",
+    "irum",
+    "str8",
+    "ban",
+    "imo"
+  ],
+  "author": "Livio Brunner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Wiichaeller/wiichaeller-overview/issues"
+  },
+  "homepage": "https://github.com/Wiichaeller/wiichaeller-overview#readme",
+  "devDependencies": {
+    "css-loader": "^0.25.0",
+    "live-server": "^1.1.0",
+    "node-sass": "^3.10.1",
+    "sass-loader": "^4.0.2",
+    "style-loader": "^0.13.1",
+    "ts-loader": "^0.9.5",
+    "typescript": "^2.0.6",
+    "typings": "^1.5.0",
+    "webpack": "^1.13.3"
+  },
+  "dependencies": {
+    "jquery": "^3.1.1"
+  }
+}
