@@ -1,0 +1,77 @@
+$lines-thickness: 40px;
+.home-component{
+    header{
+        height:100vh;
+        width:100%;
+        overflow:hidden;
+        padding:0;
+        &:after{
+            content:'';
+            display:block;
+            background: url(https://www.familien-reisen.com/blog/wp-content/uploads/2015/10/Chesa-Valisa-Weinkeller-2.jpg);
+            background-size:cover;
+            top:0;
+            left:0;
+            position:fixed;
+            z-index:0;
+            width:100%;
+            height:100%;
+        }
+        h1{
+            font-size:5em;
+            color:white;
+            position:absolute;
+            left:50%;
+            top:40%;
+            transform:translate(-50%, -50%);
+            z-index:1;
+            font-style: italic;
+        }
+    }
+    .lines{
+        width:100%;
+        height:100%;
+    }
+    .line{
+        background-color:white;
+        position:absolute;
+        transition: all 0.5s ease-in-out;
+        z-index:10;
+        &.line-top{
+            top:0;
+            left:0;
+            width:0%;
+            height:$lines-thickness;
+            &.animate{
+                width:100%;
+            }
+        }
+        &.line-right{
+            right:0;
+            top:0;
+            height:0%;
+            width:$lines-thickness;
+            &.animate{
+                height:100%;
+            }
+        }
+        &.line-bottom{
+            right:0;
+            bottom:0;
+            height:$lines-thickness;
+            width:0%;
+            &.animate{
+                width:100%;
+            }
+        }
+        &.line-left{
+            left:0;
+            bottom:0;
+            height:0%;
+            width:$lines-thickness;
+            &.animate{
+                height:100%;
+            }
+        }
+    }
+}
