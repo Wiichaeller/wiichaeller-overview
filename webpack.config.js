@@ -4,6 +4,9 @@ module.exports = {
         path: __dirname,
         filename: "src/app.js"
     },
+    resolve: {
+        extensions: ["", ".webpack.js", ".web.js", ".ts", ".tsx", ".js"]
+    },
     module: {
         loaders: [
             {
