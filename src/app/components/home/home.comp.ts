@@ -26,19 +26,13 @@ class Home {
         let lineAnimation : number = 500;
         $timeout(() => {
             this.animate.lines.top = true;
+            this.animate.lines.right = true;
+            this.animate.lines.bottom = true;
+            this.animate.lines.left = true;
         }, lineAnimation * 1);
         $timeout(() => {
-            this.animate.lines.right = true;
-        }, lineAnimation * 2);
-        $timeout(() => {
-            this.animate.lines.bottom = true;
-        }, lineAnimation * 3);
-        $timeout(() => {
-            this.animate.lines.left = true;
-        }, lineAnimation * 4);
-        $timeout(() => {
             this.animate.title = true;
-        }, lineAnimation * 5);
+        }, lineAnimation * 2);
     }
 }
 

@@ -1,6 +1,29 @@
 @import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond');
+@import 'variables';
 @import 'components/components.style';
+
 body{
     margin:0;
     padding:0;
+}
+p{
+    color:#6b7c93;
+    line-height: 26px;
+    font-weight:400;
+    font-size:1em;
+}
+h2{
+    text-transform: uppercase;
+}
+h2,h3,h4{
+    color:#32325d;
+}
+
+::selection {
+    background-color: $primary-color;
+    color: white;
+}
+::-moz-selection {
+    background-color: $primary-color;
+    color: white;
 }
