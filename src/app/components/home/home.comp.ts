@@ -1,4 +1,5 @@
 import * as angular from 'angular';
+import { ISlideShowItem } from '../slideshow/slideshow.dire';
 
 interface ILinesAnimation {
     top: boolean;
@@ -12,6 +13,21 @@ interface IHomeAnimation {
     title: boolean;
 }
 
+class SlideShowItem implements ISlideShowItem{
+    constructor(private $translate: angular.translate.ITranslateService, 
+    private translationName: string,
+    private translationText: string){
+
+    }
+    public getName(): string{
+        return this.$translate.instant(this.translationName);
+    }
+    public getText(): string{
+        return this.$translate.instant(this.translationText);
+    }
+}
+
+
 class Home {
     public animate: IHomeAnimation = {
         lines: {
@@ -22,7 +38,9 @@ class Home {
         },
         title: false
     };
-    constructor($timeout: angular.ITimeoutService) {
+
+
+    constructor(private $timeout: angular.ITimeoutService, private $translate: angular.translate.ITranslateService) {
         let lineAnimation : number = 500;
         $timeout(() => {
             this.animate.lines.top = true;
@@ -34,6 +52,9 @@ class Home {
             this.animate.title = true;
         }, lineAnimation * 2);
     }
+    public slideshow : SlideShowItem[] = [
+        new SlideShowItem(this.$translate, 'slideshow.0.name', 'slideshow.0.value')
+    ]
 }
 
 const moduleName = 'wiichaeller.home';
