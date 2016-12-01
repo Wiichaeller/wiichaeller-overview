@@ -13,8 +13,9 @@
 		</div>
 	</header>
 	<div class="container">
-		<div class="content">
-			<div layout-gt-sm="row" layout="column" flex-gt-sm="80" flex-offset-gt-sm="10" flex-gt-md="60" flex-offset-gt-md="20" layout-padding>
+		<div class="content" layout="column">
+			<section layout-gt-sm="row" layout="column" flex-gt-sm="80" flex-offset-gt-sm="10" flex-gt-md="60" flex-offset-gt-md="20"
+				layout-padding>
 				<div flex="50">
 					<h2>
 						De Underground verband vo allne Wii-Rebe
@@ -22,34 +23,49 @@
 					<p translate="home.introduction">
 					</p>
 				</div>
-				<div flex="50">
+				<div flex-gt-md="50" flex="100">
 					<img class="friends-image" src="http://previews.123rf.com/images/piksel/piksel0910/piksel091000022/5644857-Friends-with-thumbs-up-Stock-Photo-group-teenagers.jpg"
 					/>
 				</div>
-			</div>
-			<div class="site-description">
-				<div layout-gt-sm="row" layout="column" flex-gt-sm="80" flex-offset-gt-sm="10" flex-gt-md="60" flex-offset-gt-md="20">
-					<div flex="33" layout-padding>
-						<img src="http://image.flaticon.com/icons/svg/157/157285.svg" class="description-icon"/>
-						<h3 translate="process.sendwine.title"></h3>
-						<p translate="process.sendwine.description"></p>
+			</section>
+			<section class="site-description">
+				<div layout="row" layout-wrap flex-gt-sm="80" flex-offset-gt-sm="10" flex-gt-md="60" flex-offset-gt-md="20">
+					<div class="site-description-item" flex="100" flex-gt-sm="33" layout-padding layout-gt-md="column" layout="row">
+						<img src="http://image.flaticon.com/icons/svg/157/157285.svg" class="description-icon" />
+						<div>
+							<h3 translate="process.sendwine.title"></h3>
+							<p translate="process.sendwine.description"></p>
+						</div>
 					</div>
-					<div flex="33" layout-padding>
-						<img src="http://image.flaticon.com/icons/svg/65/65155.svg" class="description-icon"/>
-						<h3 translate="process.test.title"></h3>
-						<p translate="process.test.description"></p>
+					<div class="site-description-item" flex="100" flex-gt-sm="33" layout-padding layout-gt-md="column" layout="row">
+						<img src="http://image.flaticon.com/icons/svg/65/65155.svg" class="description-icon" />
+						<div>
+							<h3 translate="process.test.title"></h3>
+							<p translate="process.test.description"></p>
+						</div>
 					</div>
-					<div flex="33" layout-padding>
-						<img src="http://image.flaticon.com/icons/svg/149/149189.svg" class="description-icon"/>
-						<h3 translate="process.feedback.title"></h3>
-						<p translate="process.feedback.description"></p>
+					<div class="site-description-item" flex="100" flex-gt-sm="33" layout-padding layout-gt-md="column" layout="row">
+						<img src="http://image.flaticon.com/icons/svg/149/149189.svg" class="description-icon" />
+						<div>
+							<h3 translate="process.feedback.title"></h3>
+							<p translate="process.feedback.description"></p>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="site-wine-slideshow" md-padding>
-				<div class="site-wine-slideshow-content" flex-gt-sm="80" flex-offset-gt-sm="10" flex-gt-md="60" flex-offset-gt-md="20">
-					<slideshow items="$ctrl.slideshow"></slideshow>
+			</section>
+			<section class="quotes">
+				<div class="quotes-content" flex-gt-sm="80" flex-offset-gt-sm="10" flex-gt-md="60" flex-offset-gt-md="20">
+					<div layout-margin layout-align="center" flex-gt-md="50" flex-offset-gt-md="25" flex-gt-sm="60" flex-offset-gt-sm="20">
+						<md-card md-whiteframe="4dp">
+							<img src="https://telebasel.ch/wp-content/uploads/2016/05/danito-lopez-4-1024x768.jpg" class="md-card-image" alt="Washed Out">
+							<md-card-content layout-align="center center" layout="column">
+								<span class="quote-text" translate="quotes.danitolopez.text" layout-margin></span>
+								<span class="md-subhead" translate="quotes.danitolopez.name"></span>
+							</md-card-content>
+						</md-card>
+					</div>
 				</div>
-			</div>
+			</section>
 		</div>
 	</div>
+</div>

@@ -1,108 +1,108 @@
 $lines-thickness: 40px;
-.home-component{
-    header{
-        height:100vh;
-        width:100%;
-        overflow:hidden;
-        padding:0;
-        &:after{
-            content:'';
-            display:block;
+.home-component {
+    header {
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+        padding: 0;
+        &:after {
+            content: '';
+            display: block;
             background: url(https://www.familien-reisen.com/blog/wp-content/uploads/2015/10/Chesa-Valisa-Weinkeller-2.jpg);
-            background-size:cover;
-            top:0;
-            left:0;
-            position:absolute;
-            z-index:0;
-            width:100%;
-            height:100%;
+            background-size: cover;
+            top: 0;
+            left: 0;
+            position: absolute;
+            z-index: 0;
+            width: 100%;
+            height: 100%;
             background-position: center;
         }
     }
-    .title{
-        background-color:$primary-color;
-        position:absolute;
-        left:50%;
-        top:50%;
-        transform:translate(-50%, -50%);
-        z-index:1;
-        width:0;
-        transition:all 0.5s ease-in-out;
-        overflow:hidden;
-        padding:0;
-        opacity:0;
-        &.animate{
-            padding: 10px 20px;
-            opacity:1;
-            width:initial;
-        }
-        h1{
-            font-size:5em;
-            color:white;
-            font-style: italic;
-            margin:0;
-            @media (max-width: 959px) { 
-                font-size:2em;
-            }
-        }
-    }
-    .lines{
-        width:100%;
-        height:100%;
-    }
-    .line{
-        background-color:white;
-        position:absolute;
+    .title {
+        background-color: $primary-color;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        width: 0;
         transition: all 0.5s ease-in-out;
-        z-index:10;
-        &.line-top{
-            top:0;
-            left:0;
-            width:0%;
-            height:$lines-thickness;
-            &.animate{
-                width:100%;
-            }
+        overflow: hidden;
+        padding: 0;
+        opacity: 0;
+        &.animate {
+            padding: 10px 20px;
+            opacity: 1;
+            width: initial;
         }
-        &.line-right{
-            right:0;
-            top:0;
-            height:0%;
-            width:$lines-thickness;
-            &.animate{
-                height:100%;
-            }
-        }
-        &.line-bottom{
-            right:0;
-            bottom:0;
-            height:$lines-thickness;
-            width:0%;
-            &.animate{
-                width:100%;
-            }
-        }
-        &.line-left{
-            left:0;
-            bottom:0;
-            height:0%;
-            width:$lines-thickness;
-            &.animate{
-                height:100%;
+        h1 {
+            font-size: 5em;
+            color: white;
+            font-style: italic;
+            margin: 0;
+            @media (max-width: 959px) {
+                font-size: 2em;
             }
         }
     }
-    .container{
-        padding-top:80px;
-        .friends-image{
-            width:100%;
-            box-shadow: 0 55px 70px -20px rgba(50,50,93,.55),0 20px 30px -10px rgba(0,0,0,.14);
+    .lines {
+        width: 100%;
+        height: 100%;
+    }
+    .line {
+        background-color: white;
+        position: absolute;
+        transition: all 0.5s ease-in-out;
+        z-index: 10;
+        &.line-top {
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: $lines-thickness;
+            &.animate {
+                width: 100%;
+            }
+        }
+        &.line-right {
+            right: 0;
+            top: 0;
+            height: 0%;
+            width: $lines-thickness;
+            &.animate {
+                height: 100%;
+            }
+        }
+        &.line-bottom {
+            right: 0;
+            bottom: 0;
+            height: $lines-thickness;
+            width: 0%;
+            &.animate {
+                width: 100%;
+            }
+        }
+        &.line-left {
+            left: 0;
+            bottom: 0;
+            height: 0%;
+            width: $lines-thickness;
+            &.animate {
+                height: 100%;
+            }
+        }
+    }
+    .container {
+        padding-top: 80px;
+        .friends-image {
+            width: 100%;
+            box-shadow: 0 55px 70px -20px rgba(50, 50, 93, .55), 0 20px 30px -10px rgba(0, 0, 0, .14);
             transform: rotateX(5deg) rotateZ(2.5deg);
         }
-        .site-description{
-            position:relative;
-            margin-top:100px;
-            &:before{
+        .site-description {
+            position: relative;
+            margin-top: 100px;
+            &:before {
                 content: "";
                 position: absolute;
                 width: 100%;
@@ -113,17 +113,49 @@ $lines-thickness: 40px;
                 background-color: $primary-color;
                 z-index: -1;
             }
-            h3{
-                color:rgba(0,0,0,0.6);
+            h3 {
+                color: rgba(0, 0, 0, 0.6);
             }
-            p{
-                color:rgba(255,255,255,0.8);
+            p {
+                color: rgba(255, 255, 255, 0.8);
+            }
+            &-item {
+                height: 300px;
             }
         }
-        .description-icon{
-            margin:0;
-            width:32px;
-            opacity:0.6;
+        .description-icon {
+            margin: 0;
+            width: 32px;
+            opacity: 0.6;
+        }
+    }
+    .quotes {
+        position: relative;
+        overflow: hidden;
+        box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.4);
+        &:before {
+            background: url(http://cdn.images.express.co.uk/img/dynamic/130/590x/Mountains-625882.jpg);
+            background-size: cover;
+            background-position: center;
+            -webkit-filter: blur(3px);
+            -moz-filter: blur(3px);
+            -ms-filter: blur(3px);
+            filter: blur(3px);
+            width: 110%;
+            height: 110%;
+            display: inline-block;
+            position: absolute;
+            content: '';
+            top: -5%;
+            left: -5%;
+            z-index: -1;
+            background-attachment: fixed;
+        }
+        &-content {
+            padding: 60px;
+        }
+        .qoute-text {
+            font-size: 20px;
         }
     }
 }

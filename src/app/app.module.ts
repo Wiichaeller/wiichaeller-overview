@@ -11,7 +11,6 @@ import 'angular-material/angular-material.css';
 // app
 import appStates from './app.states';
 import home from './components/home/home.comp';
-import slideshow from './components/slideshow/slideshow.dire';
 
 // import stylesheet
 require('./app.scss');
@@ -36,10 +35,11 @@ class AppConfig {
                     'description': 'Dir wird eine Rückmeldung zurückgeschickt per Email, wie gut dein Wein ist. Es variert von "sehr gut" zu "schlecht"'
                 }
             },
-            'slideshow': {
-                0: {
+            'quotes': {
+                'title': 'Unsere Kunden sagen...',
+                'danitolopez': {
                     'name': 'Danito Lopez',
-                    'value': 'Die Seite hat mir echt weitergeholfen!'
+                    'text': 'Die Seite hat mir echt weitergeholfen!'
                 }
             }
         });
@@ -61,10 +61,11 @@ class AppConfig {
                     'description': 'Dir wird en Rückmeldig zruggschickt per Email, wie guet din Wii isch. Es variert vo "banqer zeugs imo" zu "str8 ban imo".'
                 }
             },
-            'slideshow': {
-                0: {
+            'quotes': {
+                'title': 'Üsi Kunde säged...',
+                'danitolopez': {
                     'name': 'Danito Lopez',
-                    'value': 'Die Website isch echt banqer'
+                    'text': 'Die Website isch echt banqer'
                 }
             }
         });
@@ -77,7 +78,6 @@ angular.module('wiichaeller', [
     'ui.router',
     'pascalprecht.translate',
     appStates,
-    home,
-    slideshow
+    home
 ])
     .config(AppConfig);
