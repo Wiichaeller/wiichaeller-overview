@@ -71,13 +71,11 @@
 				<div layout-gt-sm="row" layout="column" flex-gt-sm="80" flex-offset-gt-sm="10" flex-gt-md="60" flex-offset-gt-md="20" md-padding>
 					<div flex layout="column" layout-align="center center">
 						<h1 translate="costumer-of-the-day"></h1>
-						<!-- Lol hardcodiert -->
 						<md-card md-whiteframe="6dp" class="kevin-schatt">
 							<md-card-content>
-								<img width="300" src="https://scontent.xx.fbcdn.net/v/t1.0-9/14570371_1586856344951450_7703284831115121613_n.jpg?oh=897b024269afc65bc33fe8329a73804c&oe=58C56DAF"
-								/>
+								<img width="300" src="{{$ctrl.costumer.image}}" />
 								<div flex layout-align="center center" layout="column" md-padding>
-									<span>KEVIN SCHATT</span>
+									<span ng-bind="$ctrl.costumer.name"></span>
 								</div>
 							</md-card-content>
 						</md-card>
