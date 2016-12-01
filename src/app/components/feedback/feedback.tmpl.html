@@ -1,34 +1,38 @@
-<section class="feedback" flex-gt-sm="60" flex-offset-gt-sm="10" flex-gt-md="60" flex-offset-gt-md="20" md-padding>
-    <div layout-align="center center" layout="column" flex>
-        <h1>Realtime Feedback</h1>
-    </div>
-    <md-card flex-gt-xs="100" flex-offset-gt-xs="0" flex-gt-sm="50" flex-offset-gt-sm="25">
-        <md-card-content>
-            <form ng-submit="$ctrl.newFeedback()" layout="column">
-                <md-input-container>
-                    <label>Name</label>
-                    <input ng-model="$ctrl.name" maxlength="20" md-maxlength="20">
-                </md-input-container>
-                <md-input-container>
-                    <label>Text</label>
-                    <input ng-model="$ctrl.text" maxlength="100" md-maxlength="100">
-                </md-input-container>
-                <md-button type="submit">Send</md-button>
-            </form>
-        </md-card-content>
-    </md-card>
-    <div flex-gt-xs="100" flex-offset-gt-xs="0" flex-gt-sm="50" flex-offset-gt-sm="25">
-        <ul>
-            <li ng-repeat="feedback in $ctrl.feedbacks | orderBy: '-created'">
-                <md-card>
-                    <md-card-content>
-                        <div>
-                            <strong ng-bind="feedback.name"></strong>
-                        </div>
-                        <span class="md-subhead" ng-bind="feedback.text"></span>
-                    </md-card-content>
-                </md-card>
-            </li>
-        </ul>
+<section class="feedback">
+    <div flex-gt-sm="60" flex-offset-gt-sm="10" flex-gt-md="60" flex-offset-gt-md="20" md-padding>
+        <div layout-align="center center" layout="column" flex>
+            <h1>Realtime Feedback</h1>
+        </div>
+        <md-card flex-gt-xs="100" flex-offset-gt-xs="0" flex-gt-sm="50" flex-offset-gt-sm="25">
+            <md-card-content>
+                <form ng-submit="$ctrl.newFeedback()" layout="column">
+                    <md-input-container>
+                        <label>Name</label>
+                        <input ng-model="$ctrl.name" maxlength="20" md-maxlength="20">
+                    </md-input-container>
+                    <md-input-container>
+                        <label>Text</label>
+                        <input ng-model="$ctrl.text" maxlength="100" md-maxlength="100">
+                    </md-input-container>
+                    <md-button type="submit">Send</md-button>
+                </form>
+            </md-card-content>
+        </md-card>
+        <div flex-gt-xs="100" flex-offset-gt-xs="0" flex-gt-sm="50" flex-offset-gt-sm="25">
+            <ul>
+                <li ng-repeat="feedback in $ctrl.feedbacks | orderBy: '-created'">
+                    <md-card>
+                        <md-card-content>
+                            <div>
+                                <strong ng-bind="feedback.name"></strong>
+                            </div>
+                            <span class="md-subhead" ng-bind="feedback.text"></span>
+                        </md-card-content>
+                    </md-card>
+                </li>
+                <div ng-if="!$ctrl.feedbacks.length" flex layout-align="center center" layout="column"><img width="150" src="https://66.media.tumblr.com/b67c357430e0217fa6494f009d3354fe/tumblr_nm3mgcf22s1ttqpnzo1_500.gif"
+                    /></div>
+            </ul>
+        </div>
     </div>
 </section>

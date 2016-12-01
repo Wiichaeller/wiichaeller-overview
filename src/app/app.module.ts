@@ -56,7 +56,8 @@ class AppConfig {
                     'text': 'Die Seite hat mir echt weitergeholfen!'
                 }
             },
-            'costumer-of-the-day': 'Kunde des Tages'
+            'costumer-of-the-day': 'Kunde des Tages',
+            'morelinks': 'Weitere Links'
 
         });
         $translateProvider.translations('wiichaeller', {
@@ -84,9 +85,10 @@ class AppConfig {
                     'text': 'Die Website isch echt banqer'
                 }
             },
-            'costumer-of-the-day': 'Kund vom Tag'
+            'costumer-of-the-day': 'Trapper vom Tag',
+            'morelinks': 'Witeri Banqer Sites'
         });
-        $translateProvider.preferredLanguage('de');
+        $translateProvider.preferredLanguage('wiichaeller');
     }
 }
 
