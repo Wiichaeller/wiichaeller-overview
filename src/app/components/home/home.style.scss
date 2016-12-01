@@ -158,4 +158,28 @@ $lines-thickness: 40px;
             font-size: 20px;
         }
     }
+    .costumer-of-the-day {
+        position: relative;
+        &:before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 1000%;
+            top: 200px;
+            -webkit-transform: skewY(-12deg);
+            transform: skewY(-12deg);
+            background-color: white;
+            z-index: -1;
+        }
+        .kevin-schatt {
+            background-color: $primary-color;
+            color: white;
+            span {
+                text-align: center;
+                text-transform: capitalize;
+                font-size: 17px;
+                padding-top: 10px;
+            }
+        }
+    }
 }

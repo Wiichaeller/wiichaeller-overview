@@ -41,7 +41,9 @@ class AppConfig {
                     'name': 'Danito Lopez',
                     'text': 'Die Seite hat mir echt weitergeholfen!'
                 }
-            }
+            },
+            'costumer-of-the-day': 'Kunde des Tages'
+
         });
         $translateProvider.translations('wiichaeller', {
             'home': {
@@ -67,7 +69,8 @@ class AppConfig {
                     'name': 'Danito Lopez',
                     'text': 'Die Website isch echt banqer'
                 }
-            }
+            },
+            'costumer-of-the-day': 'Kund vom Tag'
         });
         $translateProvider.preferredLanguage('de');
     }
