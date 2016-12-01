@@ -1,7 +1,7 @@
 import Feedback from './feedback.serv';
 import firebase from 'firebase';
 
-class Home {
+class FeedbackComponent {
     private feedbacks: AngularFireArray;
     private name: string;
     private text: string;
@@ -28,7 +28,7 @@ export default moduleName;
 
 angular.module(moduleName, [Feedback])
     .component('feedback', {
-        controller: Home,
+        controller: FeedbackComponent,
         controllerAs: '$ctrl',
         templateUrl: 'app/components/feedback/feedback.tmpl.html'
     });

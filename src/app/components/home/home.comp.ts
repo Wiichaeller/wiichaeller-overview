@@ -1,4 +1,5 @@
 import * as angular from 'angular';
+import Toolbar from '../toolbar/toolbar.comp';
 
 interface ILinesAnimation {
     top: boolean;
@@ -43,7 +44,7 @@ class Home {
 const moduleName = 'wiichaeller.home';
 export default moduleName;
 
-angular.module(moduleName, [])
+angular.module(moduleName, [Toolbar])
     .component('home', {
         controller: Home,
         controllerAs: '$ctrl',

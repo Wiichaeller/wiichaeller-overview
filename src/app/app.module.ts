@@ -31,9 +31,11 @@ class AppConfig {
         };
         firebase.initializeApp(config);
 
+        // Todo : Move to Files
         $translateProvider.translations('de', {
             'home': {
-                'introduction': 'Du bist dir unsicher, ob dein Wein gut oder schlecht ist?'
+                'introduction': 'Du bist dir unsicher, ob dein Wein gut oder schlecht ist? Dann bist du bei uns genau richtig. Wir machen dein Leben leichter!',
+                'title': 'De Wiichäller'
             },
             'process': {
                 'sendwine': {
@@ -62,7 +64,8 @@ class AppConfig {
         });
         $translateProvider.translations('wiichaeller', {
             'home': {
-                'introduction': 'Du bisch dir unsicher, öb din Wii banqer isch oder wack-ass-pussy shit?'
+                'introduction': 'Du bisch dir unsicher, öb din Wii banqer isch oder wack-ass-pussy shit? Denn bisch du bi üs genau richtig. Mir mached dis Lebe huere liecht. Schwöre.',
+                'title': 'De Wiichäller'
             },
             'process': {
                 'sendwine': {
@@ -88,7 +91,7 @@ class AppConfig {
             'costumer-of-the-day': 'Trapper vom Tag',
             'morelinks': 'Witeri Banqer Sites'
         });
-        $translateProvider.preferredLanguage('wiichaeller');
+        $translateProvider.preferredLanguage('de');
     }
 }
 

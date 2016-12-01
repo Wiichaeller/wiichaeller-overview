@@ -1,0 +1,21 @@
+.toolbar{
+    position:fixed;
+    width:100%;
+    z-index:50;
+    padding-right:30px;
+    .language{
+        width: 25px;
+        height: 25px;
+        background-size:100% 100%;
+        border-radius:200px;
+        margin:5px;
+        cursor:pointer;
+        &-german{
+            background-image:url(https://s-media-cache-ak0.pinimg.com/originals/78/dc/6b/78dc6ba2de3349847570db820d48a2d4.jpg);
+        }
+        &-wiichaeller{
+            background-image:url(https://scontent-fra3-1.xx.fbcdn.net/v/t34.0-12/s2048x2048/13510710_1025203514230435_334344777_n.jpg?oh=b6fc285c477aa034f957a460444c3345&oe=5842296A);
+        }
+    }
+    
+}
