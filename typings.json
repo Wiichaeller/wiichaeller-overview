@@ -4,6 +4,8 @@
     "angular-animate": "registry:dt/angular-animate#1.5.0+20160709061515",
     "angular-material": "registry:dt/angular-material#1.1.0-rc5.0+20161019085523",
     "angular-translate": "registry:dt/angular-translate#2.4.0+20160729132354",
+    "angularfire": "registry:dt/angularfire#0.8.2+20160316155526",
+    "firebase": "registry:dt/firebase#2.4.1+20160412125105",
     "jquery": "registry:dt/jquery#1.10.0+20160929162922",
     "node": "registry:dt/node#6.0.0+20161019125345"
   }

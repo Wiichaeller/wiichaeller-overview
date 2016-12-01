@@ -8,15 +8,28 @@ import 'angular-animate';
 import 'angular-translate';
 import 'angular-material/angular-material.js';
 import 'angular-material/angular-material.css';
+import * as firebase from 'firebase';
+import 'angularfire';
 // app
 import appStates from './app.states';
 import home from './components/home/home.comp';
+import feedback from './components/feedback/feedback.comp';
 
 // import stylesheet
 require('./app.scss');
 
 class AppConfig {
     constructor($translateProvider: angular.translate.ITranslateProvider) {
+
+        var config = {
+            apiKey: "AIzaSyAHo1b4F7LNgovriQtz6JG5aAkSclWJ_po",
+            authDomain: "wiichaeller.firebaseapp.com",
+            databaseURL: "https://wiichaeller.firebaseio.com",
+            storageBucket: "wiichaeller.appspot.com",
+            messagingSenderId: "946828911682"
+        };
+        firebase.initializeApp(config);
+
         $translateProvider.translations('de', {
             'home': {
                 'introduction': 'Du bist dir unsicher, ob dein Wein gut oder schlecht ist?'
@@ -79,8 +92,10 @@ class AppConfig {
 angular.module('wiichaeller', [
     'ngMaterial',
     'ui.router',
+    'firebase',
     'pascalprecht.translate',
     appStates,
-    home
+    home,
+    feedback
 ])
     .config(AppConfig);
