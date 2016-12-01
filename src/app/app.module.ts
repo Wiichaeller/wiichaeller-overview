@@ -2,6 +2,7 @@
 
 // lib
 import * as angular from 'angular';
+import 'angular-messages';
 import 'angular-aria/angular-aria.js';
 import 'angular-ui-router';
 import 'angular-animate';
@@ -94,6 +95,7 @@ angular.module('wiichaeller', [
     'ui.router',
     'firebase',
     'pascalprecht.translate',
+    'ngMessages',
     appStates,
     home,
     feedback
